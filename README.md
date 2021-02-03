@@ -14,6 +14,8 @@
 
 ## Копаненты:
 
+
+
 1. [Кнопки](https://aliexpress.ru/item/10pcs-Mini-12mm-Toggle-Rocker-Switch-6-Pins-2-Position-3-Position-ON-OFF-ON-OFF/4000238840867.html?spm=a2g0s.9042311.0.0.264d33edreTiCg&_ga=2.268409480.721664696.1612051115-530682806.1605135245&_gac=1.114393461.1610796936.CjwKCAiAuoqABhAsEiwAdSkVVCUs5nTX80VVDpcnxLvB3kZpXs2zuaedRuR_P9vpGu__abLf1sHESBoCMw4QAvD_BwE): ![](.gitbook/assets/screenshot-from-2021-02-02-12-42-39.png) 
 2. [Направляющая MGN7H 300mm](https://aliexpress.ru/item/MGN7-MGN12-MGN15-MGN9-L-100-200-350-500-600-800mm-miniature-linear-rail-slide-1pcs/4000264234020.html?spm=a2g0s.9042311.0.0.264d33edV28rk1&_ga=2.58105772.721664696.1612051115-530682806.1605135245&_gac=1.52601434.1610796936.CjwKCAiAuoqABhAsEiwAdSkVVCUs5nTX80VVDpcnxLvB3kZpXs2zuaedRuR_P9vpGu__abLf1sHESBoCMw4QAvD_BwE): ![](.gitbook/assets/screenshot-from-2021-02-02-12-46-36.png) 
 3. [зубчатый шкив GT2 Bore 5 width 6](https://aliexpress.ru/item/High-Quality-GT2-Timing-Pulley-20-teeth-Bore-5mm-8mm-Aluminum-2GT-Synchronous-Wheel-3D-Printer/4000898906136.html?spm=a2g0s.9042311.0.0.264d33edffujk0&_ga=2.61209386.721664696.1612051115-530682806.1605135245&_gac=1.82479716.1610796936.CjwKCAiAuoqABhAsEiwAdSkVVCUs5nTX80VVDpcnxLvB3kZpXs2zuaedRuR_P9vpGu__abLf1sHESBoCMw4QAvD_BwE) ![](.gitbook/assets/screenshot-from-2021-02-02-12-55-43.png) 
