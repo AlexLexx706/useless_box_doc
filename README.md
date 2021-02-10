@@ -34,5 +34,11 @@
 
 последняя версия модели [тут](https://cad.onshape.com/documents/125a385a616ec6f2df24a618/w/73a084dbbe324177ee5459c5/e/2412d4c9c1c74fe1c5f89fdd)
 
+## Сборка стенда для отладки прошивки:
+
+{% embed url="https://www.youtube.com/watch?v=QXh6B5VTKdE" %}
+
+
+
 ## Прошивка:
 
