@@ -32,7 +32,7 @@
 
 ## Конструкция:
 
-последняя версия модели [тут](https://cad.onshape.com/documents/125a385a616ec6f2df24a618/w/73a084dbbe324177ee5459c5/e/2412d4c9c1c74fe1c5f89fdd)
+последняя версия модели [тут](https://cad.onshape.com/documents/125a385a616ec6f2df24a618/w/73a084dbbe324177ee5459c5/e/6f8e287a4627f32adfb02f55)
 
 ## Сборка стенда для отладки прошивки:
 
