@@ -34,7 +34,7 @@
 
 последняя версия модели[![](.gitbook/assets/screenshot-from-2021-02-10-18-14-02.png)](https://cad.onshape.com/documents/125a385a616ec6f2df24a618/w/73a084dbbe324177ee5459c5/e/6f8e287a4627f32adfb02f55)
 
-## Сборка стенда для отладки прошивки:
+## Сборка стенда:
 
 {% embed url="https://www.youtube.com/watch?v=QXh6B5VTKdE" %}
 
