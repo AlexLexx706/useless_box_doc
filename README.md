@@ -40,7 +40,11 @@
 
 {% embed url="https://www.youtube.com/watch?v=9AvNeny42VU" %}
 
+## Схема питания:
 
+ 
+
+![](.gitbook/assets/photo5271509028385698236.jpg)
 
 
 
