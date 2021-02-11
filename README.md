@@ -38,6 +38,10 @@
 
 {% embed url="https://www.youtube.com/watch?v=QXh6B5VTKdE" %}
 
+{% embed url="https://www.youtube.com/watch?v=9AvNeny42VU" %}
+
+
+
 
 
 ## Прошивка:
