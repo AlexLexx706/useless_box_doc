@@ -46,7 +46,11 @@
 
 ![](.gitbook/assets/photo5271509028385698236.jpg)
 
+## Распиновка arduino nano:
 
+ 
+
+![](.gitbook/assets/arduino-nano-pinout.jpg)
 
 ## Прошивка:
 
