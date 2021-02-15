@@ -24,6 +24,9 @@
 
 1. [статья](https://darxton.ru/wiki-article/kontroller-shagovogo-dvigatelya/) по управлению шаговыми двигателями
 2. [библиотека](https://github.com/adafruit/AccelStepper) управления шаговиком 
+3. ещё [либа](https://alexgyver.ru/gyverstepper/)
+4. [туториал по настройки драйвера](https://www.makerguides.com/drv8825-stepper-motor-driver-arduino-tutorial/)
+5. [ещё](https://robotchip.ru/obzor-drayvera-shagovogo-dvigatelya-drv8825/) 
 
 
 
