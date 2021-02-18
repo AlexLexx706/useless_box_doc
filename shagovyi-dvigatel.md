@@ -28,6 +28,11 @@
 4. [туториал по настройки драйвера](https://www.makerguides.com/drv8825-stepper-motor-driver-arduino-tutorial/)
 5. [ещё](https://robotchip.ru/obzor-drayvera-shagovogo-dvigatelya-drv8825/) 
 
+## Теория управления шаговыми двигателями:
+
+1.  [https://www.embedded.com/generate-stepper-motor-speed-profiles-in-real-time/](https://www.embedded.com/generate-stepper-motor-speed-profiles-in-real-time/)
+2. [https://www.researchgate.net/publication/322453861\_Generate\_stepper\_motor\_linear\_speed\_profile\_in\_real\_time](https://www.researchgate.net/publication/322453861_Generate_stepper_motor_linear_speed_profile_in_real_time)
+3. 
 ## Пример программы управления:
 
 ```text

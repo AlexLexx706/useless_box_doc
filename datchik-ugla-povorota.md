@@ -69,5 +69,9 @@ void loop() {
 
 ```
 
+## Примеры работы:
+
+{% embed url="https://www.youtube.com/watch?v=N5fEOfg09DQ&feature=youtu.be" %}
+
 
 
