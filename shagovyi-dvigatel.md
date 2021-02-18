@@ -28,5 +28,58 @@
 4. [туториал по настройки драйвера](https://www.makerguides.com/drv8825-stepper-motor-driver-arduino-tutorial/)
 5. [ещё](https://robotchip.ru/obzor-drayvera-shagovogo-dvigatelya-drv8825/) 
 
+## Пример программы управления:
+
+```text
+// Define stepper motor connections and steps per revolution:
+#define DIR_PIN 2
+#define STEP_PIN 3
+#define ENABLE_PIN 4
+#define STEPS_PER_REVOLUTION 200 * 3
+
+void setup() {
+	// Declare pins as output:
+	pinMode(DIR_PIN, OUTPUT);
+	pinMode(STEP_PIN, OUTPUT);
+	pinMode(ENABLE_PIN, OUTPUT);
+
+	digitalWrite(ENABLE_PIN, LOW);
+}
+
+void loop() {
+	while (1) {
+		// Set the spinning direction clockwise:
+		digitalWrite(ENABLE_PIN, LOW);
+		digitalWrite(DIR_PIN, HIGH);
+
+		// Spin the stepper motor 1 revolution slowly:
+		for (int i = 0; i < STEPS_PER_REVOLUTION; i++) {
+			// These four lines result in 1 step:
+			digitalWrite(STEP_PIN, HIGH);
+			delayMicroseconds(20);
+			digitalWrite(STEP_PIN, LOW);
+			delayMicroseconds(1000);
+		}
+		digitalWrite(ENABLE_PIN, HIGH);
+		delay(2000);
+
+		digitalWrite(ENABLE_PIN, LOW);
+		digitalWrite(DIR_PIN, LOW);
+
+		// Spin the stepper motor 1 revolution slowly:
+		for (int i = 0; i < STEPS_PER_REVOLUTION; i++) {
+			// These four lines result in 1 step:
+			digitalWrite(STEP_PIN, HIGH);
+			delayMicroseconds(20);
+			digitalWrite(STEP_PIN, LOW);
+			delayMicroseconds(1000);
+		}
+		digitalWrite(ENABLE_PIN, HIGH);
+		delay(2000);
+	}
+}
+
+```
+
 
 
