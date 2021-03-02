@@ -53,6 +53,8 @@
 
 ![](.gitbook/assets/arduino-nano-pinout.jpg)
 
+[схема arduino Nano](https://www.arduino.cc/en/uploads/Main/ArduinoNano30Schematic.pdf)
+
 ## Плата расширения и финальная электрическая схема:
 
 ### Занятые порты arduino nano:
