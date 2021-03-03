@@ -56,9 +56,7 @@
 
 [схема Arduino Nano](https://www.arduino.cc/en/uploads/Main/ArduinoNano30Schematic.pdf)
 
-## Плата расширения и занятые порты на Arduino Nano:
-
-### Занятые порты arduino nano:
+## Занятые порты arduino nano:
 
 
 
@@ -66,7 +64,7 @@
 
 ![](.gitbook/assets/photo5330142757974553127.jpg)
 
-###  Обозначение разьёмов платы-расширения:
+##  Обозначение разьёмов платы-расширения:
 
  
 
