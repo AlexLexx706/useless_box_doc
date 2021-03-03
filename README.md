@@ -56,7 +56,7 @@
 
 [схема Arduino Nano](https://www.arduino.cc/en/uploads/Main/ArduinoNano30Schematic.pdf)
 
-## Плата расширения и финальная электрическая схема:
+## Плата расширения и занятые порты на Arduino Nano:
 
 ### Занятые порты arduino nano:
 
