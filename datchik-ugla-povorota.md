@@ -73,5 +73,7 @@ void loop() {
 
 {% embed url="https://www.youtube.com/watch?v=N5fEOfg09DQ&feature=youtu.be" %}
 
+## Протокол I2C:
 
+[хорошая статья](http://easyelectronics.ru/interface-bus-iic-i2c.html) по описании физики и логики работы протокола
 
