@@ -30,6 +30,7 @@
 12. [Концевые выключатели:](https://aliexpress.ru/item/1005002095893731.html?spm=a2g0o.productlist.0.0.738c5adf1HHuBW&algo_pvid=881a52cb-539b-430d-be31-5b1113a0f7ba&algo_expid=881a52cb-539b-430d-be31-5b1113a0f7ba-2&btsid=0b8b035616123513749206658ebd18&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_&sku_id=12000018727208471) ![](.gitbook/assets/screenshot-from-2021-02-03-14-23-38.png) 
 13. [Блок питания 24 Вольта 100 Ват: MEAN WELL  LRS-100-24](https://aliexpress.ru/item/4000583760898.html?spm=a2g0o.cart.0.0.31273c00FpFe9I&mp=1&_ga=2.228498075.721664696.1612051115-530682806.1605135245&_gac=1.126968447.1612308157.CjwKCAiAjeSABhAPEiwAqfxURU6SgqMSpneTdudvHVfqPxbiaVtaGNwp5Z0pYRTR7Jnq-5hC8eiXThoCH3cQAvD_BwE): ![](.gitbook/assets/screenshot-from-2021-02-03-14-28-47.png) 
 14. [Серва D3615](https://aliexpress.ru/item/32591892775.html?spm=a2g0o.productlist.0.0.64122326MxbxwF&algo_pvid=d103a923-3100-482d-b945-38f32df2212a&algo_expid=d103a923-3100-482d-b945-38f32df2212a-0&btsid=0b8b158f16123942747607896e3a4e&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_): ![](.gitbook/assets/screenshot-from-2021-02-04-02-16-39.png) 
+15. [Arduino Nano](https://aliexpress.ru/item/1005001706390728.html?spm=a2g0o.productlist.0.0.427d1a9bqL1tBw&algo_pvid=d1bf206a-003e-4e88-aa41-8123fbea8f6f&algo_expid=d1bf206a-003e-4e88-aa41-8123fbea8f6f-0&btsid=0b8b15f516147304314408509e7153&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_&sku_id=12000017234301331): ![](.gitbook/assets/screenshot-from-2021-03-03-03-14-45.png) 
 
 ## Конструкция:
 
@@ -53,7 +54,7 @@
 
 ![](.gitbook/assets/arduino-nano-pinout.jpg)
 
-[схема arduino Nano](https://www.arduino.cc/en/uploads/Main/ArduinoNano30Schematic.pdf)
+[схема Arduino Nano](https://www.arduino.cc/en/uploads/Main/ArduinoNano30Schematic.pdf)
 
 ## Плата расширения и финальная электрическая схема:
 
