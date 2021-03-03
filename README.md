@@ -75,5 +75,137 @@
 
 ![](.gitbook/assets/photo5321231280655938872.jpg)
 
-## Прошивка:
+## Пример кода проверки функционала:
+
+```text
+#include <AccelStepper.h>
+#include <Servo.h>
+#include <AS5600.h>
+
+#define STEPS_PER_REVOLUTION 200 * 4
+#define DIR_PIN 4
+#define STEP_PIN 7
+#define ENABLE_PIN 8
+
+#define BUTTON_0 9
+#define BUTTON_1 10
+#define BUTTON_2 11
+#define BUTTON_3 12
+#define BUTTON_4 A0
+#define BUTTON_5 13
+#define BUTTON_6 A3
+#define BUTTON_7 A2
+#define BUTTON_8 A1
+
+#define BUTTON_END_LEFT 2
+#define BUTTON_END_RIGHT 3
+
+#define SERVO_1 5
+#define SERVO_2 6
+
+
+static int buttons[] = {
+	BUTTON_0, BUTTON_1, BUTTON_2, BUTTON_3, BUTTON_4, BUTTON_5,
+	BUTTON_6,BUTTON_7, BUTTON_8, BUTTON_END_LEFT, BUTTON_END_RIGHT};
+
+Servo servo_1;
+Servo servo_2;
+AccelStepper stepper(AccelStepper::DRIVER, STEP_PIN, DIR_PIN);
+
+
+AS5600 encoder;
+long revolutions = 0;	// number of revolutions the encoder has made
+double position;		// the calculated value the encoder is at
+double output;			// raw value from AS5600
+long lastOutput;		// last output from AS5600
+
+void setup() {
+	// 0. setup serial
+	Serial.begin(115200);
+
+	//1. setup stepper driver
+	pinMode(ENABLE_PIN, OUTPUT);
+	digitalWrite(ENABLE_PIN, LOW);
+
+	stepper.setMaxSpeed(3000 * 2);
+	stepper.setAcceleration(5000 * 2);
+	stepper.moveTo(STEPS_PER_REVOLUTION);
+
+	//2. setup buttons
+	for (int i = 0; i < sizeof(buttons)/ sizeof(buttons[0]); i++) {
+		pinMode(buttons[i], INPUT_PULLUP); 
+	}
+
+	//3. init servos
+	servo_1.attach(SERVO_1);
+	servo_2.attach(SERVO_2);
+
+	//4. init encoder
+	output = encoder.getPosition();
+	lastOutput = output;
+	position = output;
+}
+
+void test_encoder() {
+	// get the raw value of the encoder
+	output = encoder.getPosition();
+
+	// check if a full rotation has been made
+	if ((lastOutput - output) > 2047 ) {
+		revolutions++;
+	}
+	
+	if ((lastOutput - output) < -2047 ) {
+		revolutions--;
+	}
+	lastOutput = output; 
+
+	// calculate the position the the encoder is at based off of the number of revolutions
+	position = (revolutions * 4096 + output) / 4096. * 360;
+	Serial.println(position);
+}
+
+void test_buttons() {
+	unsigned short button_mask = 0;
+	for (int i = 0; i < sizeof(buttons)/ sizeof(buttons[0]); i++) {
+		button_mask = button_mask | (digitalRead(buttons[i]) ? 1 : 0) << i;
+	}
+	// Serial.println(button_mask, BIN);
+}
+
+void test_stepper() {
+	if (stepper.distanceToGo() == 0) {
+		stepper.moveTo(-stepper.currentPosition());
+	}
+	stepper.run();
+}
+
+void test_servo() {
+	static unsigned long start_time = millis();
+	static char state = 0;
+
+	unsigned long cur_time = millis();
+
+	if (state == 0) {
+		if ((cur_time - start_time) > 250) {
+			servo_1.write(105);
+			start_time = cur_time;
+			state = 1;
+		}
+	} else {
+		if ((cur_time - start_time) > 700) {
+			servo_1.write(0);
+			start_time = cur_time;
+			state = 0;
+		}
+	}
+}
+
+void loop() {
+	test_servo();
+	test_buttons();
+	test_stepper();
+	test_encoder();
+}
+```
 
