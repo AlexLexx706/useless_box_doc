@@ -69,9 +69,111 @@ void loop() {
 
 ```
 
+## Пример получения позиции в асинхронном режиме:
+
+В примере используеться  бибилиотека [AsyncI2CMaster](https://github.com/cskarai/asynci2cmaster) 
+
+```text
+#include <AsyncI2CMaster.h>
+#define I2C_ADDRESS 0x36
+#define RAWANGLEAddressMSB 0x0C
+#define RESOLUTION 4096
+#define HALF_RESOLUTION 2047
+
+AsyncI2CMaster i2cMaster;
+
+
+struct EncoderSate {
+	unsigned long s_time;
+	long revolutions;		// number of revolutions the encoder has made
+	float position;		// the calculated value the encoder is at
+	int lastOutput;			// last output from AS5600
+	int counter;
+};
+
+static EncoderSate encoder_state = {millis(), 0, 0, 0, 0};
+
+
+void dumpErrorStatus(uint8_t status)
+{
+	switch(status)
+	{
+		case I2C_STATUS_DEVICE_NOT_PRESENT:
+			Serial.println(F("Device not present!"));
+			break;
+		case I2C_STATUS_TRANSMIT_ERROR:
+			Serial.println(F("Bus error"));
+			break;
+		case I2C_STATUS_NEGATIVE_ACKNOWLEDGE:
+			Serial.println(F("Negative acknowledge"));
+			break;
+		case I2C_STATUS_OUT_OF_MEMORY:
+			Serial.println(F("memory not enought"));
+			break;
+	}
+}
+
+void requestCallback(uint8_t status, void *arg, uint8_t * data, uint8_t datalen) {
+	if( status == I2C_STATUS_OK ) {
+		//1. decode pos data:
+		int output = (data[0] << 8) | (data[1]);
+		// check if a full rotation has been made
+		if ((encoder_state.lastOutput - output) > HALF_RESOLUTION ) {
+			encoder_state.revolutions++;
+		}
+		
+		if ((encoder_state.lastOutput - output) < -HALF_RESOLUTION ) {
+			encoder_state.revolutions--;
+		}
+		encoder_state.lastOutput = output;
+
+		// calculate the position the the encoder is at based off of the number of revolutions
+		encoder_state.position = (encoder_state.revolutions * RESOLUTION + output) / float(RESOLUTION) * 360;
+		// Serial.println(encoder_state.position);
+		encoder_state.counter++;
+		unsigned long c_time = millis();
+
+		if (c_time - encoder_state.s_time >= 1000) {
+			encoder_state.s_time = c_time;
+			Serial.println(encoder_state.counter);
+			encoder_state.counter = 0;
+		}
+
+		//1. request new position:
+		uint8_t arg = RAWANGLEAddressMSB;
+		if (i2cMaster.request(I2C_ADDRESS, &arg, sizeof(arg), 2, requestCallback, NULL) != I2C_STATUS_OK) {
+			dumpErrorStatus(status);
+		}
+	} else {
+		dumpErrorStatus(status);
+	}
+}
+
+void setup() {
+
+	Serial.begin(115200);
+	Serial.println(F("Starting"));
+	i2cMaster.begin();
+	
+	uint8_t arg = RAWANGLEAddressMSB;
+	uint8_t status;
+	if (status = i2cMaster.request(I2C_ADDRESS, &arg, sizeof(arg), 2, requestCallback, NULL) != I2C_STATUS_OK) {
+		dumpErrorStatus(status);
+	}
+}
+
+void loop() {
+	i2cMaster.loop();
+}
+
+
+```
+
 ## Примеры работы:
 
 {% embed url="https://www.youtube.com/watch?v=N5fEOfg09DQ&feature=youtu.be" %}
 
+## Протокол I2C:
 
+[хорошая статья](http://easyelectronics.ru/interface-bus-iic-i2c.html) по описании физики и логики работы протокола
 
