@@ -73,7 +73,7 @@ void loop() {
 
 ## Пример получения позиции в асинхронном режиме:
 
-В примере используеться  бибилиотека [AsyncI2CMaster](https://github.com/cskarai/asynci2cmaster) 
+В примере используеться  бибилиотека [AsyncI2CMaster](https://github.com/cskarai/asynci2cmaster), данный пример показывает как можно работать с шиной I2c в асинхронном режиме, **освобождая процессор** для других нужд:
 
 ```text
 #include <AsyncI2CMaster.h>
