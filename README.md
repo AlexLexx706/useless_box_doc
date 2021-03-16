@@ -56,6 +56,8 @@
 
 [схема Arduino Nano](https://www.arduino.cc/en/uploads/Main/ArduinoNano30Schematic.pdf)
 
+[даташет Atmega328](https://files.amperka.ru/datasheets/ATmega328.pdf)
+
 ## Занятые порты arduino nano:
 
 
