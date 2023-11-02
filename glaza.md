@@ -10,7 +10,7 @@
 
 ## 3D модель глаз ([тут](https://cad.onshape.com/documents/22991d42a36e22d3e2ce4d8a/w/e82bc4625fd0478d95b63bac/e/9fd64059c321da49cb1706a3?renderMode=0\&uiState=6418e4f4b15fa14416f7e92f)):
 
-![](broken-reference)
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Результат печати и сборки:
 
