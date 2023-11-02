@@ -12,6 +12,12 @@
 
 <figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
+## Модельки для печати тут:&#x20;
+
+
+
+{% file src=".gitbook/assets/glaza.zip" %}
+
 ## Результат печати и сборки:
 
 <figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
