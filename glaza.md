@@ -14,7 +14,9 @@
 
 ## Результат печати и сборки:
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+## [https://www.youtube.com/watch?v=v935FX3t\_GE](https://www.youtube.com/watch?v=v935FX3t\_GE)
 
 
 
@@ -22,4 +24,4 @@
 
 ## Текущая электрическая ([ссылка для редактированя](https://lucid.app/lucidspark/39f16498-e214-49d0-b583-c0931b6df66b/edit?invitationId=inv\_a764d8e7-a1d5-476e-994c-74396b92bc16))
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Blank board.png" alt=""><figcaption></figcaption></figure>
