@@ -4,4 +4,4 @@
 * [Шаговый двигатель](shagovyi-dvigatel.md)
 * [Датчик угла поворота AS5600:](datchik-ugla-povorota.md)
 * [Управление сервой](upravlenie-servoi.md)
-
+* [Глаза](glaza.md)
